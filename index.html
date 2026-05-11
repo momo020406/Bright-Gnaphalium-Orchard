@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>明亮木鱉果園 即時儀表板</title>
+
+<style>
+:root{
+  --bg:#dff5d8;
+  --card:#ffffff;
+  --main:#245953;
+  --text:#123;
+  --accent:#16a34a;
+}
+
+body{
+  margin:0;
+  font-family:"Microsoft JhengHei", Arial, sans-serif;
+  background:var(--bg);
+  color:var(--text);
+}
+
+body.tech{
+  --bg:#07111f;
+  --card:#101c2e;
+  --main:#38bdf8;
+  --text:#e5f6ff;
+  --accent:#22c55e;
+}
+
+body.simple{
+  --bg:#f4f4f5;
+  --card:#ffffff;
+  --main:#374151;
+  --text:#111827;
+  --accent:#2563eb;
+}
+
+.wrap{
+  max-width:1200px;
+  margin:auto;
+  padding:20px;
+}
+
+.header{
+  background:var(--card);
+  border:4px solid var(--main);
+  border-radius:22px;
+  padding:20px;
+  text-align:center;
+  margin-bottom:16px;
+}
+
+.header h1{
+  margin:0;
+  font-size:42px;
+  letter-spacing:4px;
+}
+
+.info{
+  margin-top:8px;
+  font-size:18px;
+}
+
+.theme-buttons{
+  display:flex;
+  justify-content:center;
+  gap:10px;
+  margin:16px 0;
+  flex-wrap:wrap;
+}
+
+button{
+  border:none;
+  background:var(--main);
+  color:white;
+  padding:12px 22px;
+  border-radius:999px;
+  font-size:18px;
+  font-weight:bold;
+  cursor:pointer;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:16px;
+}
+
+.card{
+  background:var(--card);
+  border:3px solid var(--main);
+  border-radius:22px;
+  padding:18px;
+  box-shadow:0 8px 20px rgba(0,0,0,.12);
+}
+
+.card h2{
+  margin-top:0;
+  font-size:28px;
+  color:var(--main);
+}
+
+.weather-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:12px;
+}
+
+.item{
+  background:rgba(128,128,128,.12);
+  border-radius:16px;
+  padding:14px;
+  font-size:22px;
+  font-weight:bold;
+}
+
+.value{
+  display:block;
+  font-size:34px;
+  color:var(--accent);
+  margin-top:6px;
+}
+
+.station-wrap{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:16px;
+  margin-top:16px;
+}
+
+.station{
+  background:var(--card);
+  border:3px solid var(--main);
+  border-radius:22px;
+  padding:18px;
+}
+
+.station h3{
+  margin-top:0;
+  font-size:28px;
+  color:var(--main);
+}
+
+.sensor-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:12px;
+}
+
+.footer{
+  text-align:center;
+  margin-top:18px;
+  color:var(--main);
+  font-weight:bold;
+}
+
+@media(max-width:768px){
+  .grid,.station-wrap,.weather-grid,.sensor-grid{
+    grid-template-columns:1fr;
+  }
+
+  .header h1{
+    font-size:30px;
+  }
+}
+</style>
+</head>
+
+<body>
+<div class="wrap">
+
+  <div class="header">
+    <h1 id="projectName">明亮木鱉果園</h1>
+    <div class="info">
+      <span id="location">彰化縣溪湖鎮</span>　
+      更新時間：<span id="updatedAt">--</span>
+    </div>
+  </div>
+
+  <div class="theme-buttons">
+    <button onclick="setTheme('farm')">農業綠色風</button>
+    <button onclick="setTheme('tech')">深色科技風</button>
+    <button onclick="setTheme('simple')">卡片簡約風</button>
+    <button onclick="loadData()">立即更新</button>
+  </div>
+
+  <div class="grid">
+    <div class="card">
+      <h2>溪湖鎮天氣狀況</h2>
+      <div class="weather-grid">
+        <div class="item">天氣<span class="value" id="weatherText">--</span></div>
+        <div class="item">氣溫 °C<span class="value" id="airTemp">--</span></div>
+        <div class="item">濕度 %<span class="value" id="airHumidity">--</span></div>
+        <div class="item">降雨 mm<span class="value" id="rainfall">--</span></div>
+        <div class="item">風速 m/s<span class="value" id="windSpeed">--</span></div>
+        <div class="item">氣壓 hPa<span class="value" id="airPressure">--</span></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>今日溫度</h2>
+      <div class="weather-grid">
+        <div class="item">最高溫 °C<span class="value" id="dailyHigh">--</span></div>
+        <div class="item">最低溫 °C<span class="value" id="dailyLow">--</span></div>
+        <div class="item">最高溫時間<span class="value" id="dailyHighTime" style="font-size:22px;">--</span></div>
+        <div class="item">最低溫時間<span class="value" id="dailyLowTime" style="font-size:22px;">--</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="station-wrap" id="stations">
+    資料讀取中...
+  </div>
+
+  <div class="footer">
+    氣象站：<span id="weatherStation">--</span>　
+    氣象觀測時間：<span id="weatherObsTime">--</span>
+  </div>
+
+</div>
+
+<script>
+const JSON_URL = "https://raw.githubusercontent.com/momo020406/Bright-Gnaphalium-Orchard/main/data.json";
+
+function setTheme(theme){
+  document.body.className = "";
+  if(theme === "tech") document.body.classList.add("tech");
+  if(theme === "simple") document.body.classList.add("simple");
+}
+
+function show(v){
+  return v === null || v === undefined || v === "" ? "--" : v;
+}
+
+function loadData(){
+  fetch(JSON_URL + "?t=" + Date.now())
+    .then(res => res.json())
+    .then(data => {
+      document.getElementById("projectName").textContent = data.project || "明亮木鱉果園";
+      document.getElementById("location").textContent = data.location || "彰化縣溪湖鎮";
+      document.getElementById("updatedAt").textContent = data.updated_at || "--";
+
+      const w = data.weather || {};
+
+      document.getElementById("weatherText").textContent = show(w.weather_text);
+      document.getElementById("airTemp").textContent = show(w.air_temp);
+      document.getElementById("airHumidity").textContent = show(w.air_humidity);
+      document.getElementById("rainfall").textContent = show(w.rainfall);
+      document.getElementById("windSpeed").textContent = show(w.wind_speed);
+      document.getElementById("airPressure").textContent = show(w.air_pressure);
+
+      document.getElementById("dailyHigh").textContent = show(w.daily_high_temp);
+      document.getElementById("dailyLow").textContent = show(w.daily_low_temp);
+      document.getElementById("dailyHighTime").textContent = show(w.daily_high_time);
+      document.getElementById("dailyLowTime").textContent = show(w.daily_low_time);
+
+      document.getElementById("weatherStation").textContent =
+        show(w.weather_station_name) + " / " + show(w.weather_station_id);
+
+      document.getElementById("weatherObsTime").textContent = show(w.weather_obs_time);
+
+      renderStations(data.stations || []);
+    })
+    .catch(err => {
+      document.getElementById("stations").innerHTML = "資料讀取失敗，請確認 data.json 是否存在。";
+      console.error(err);
+    });
+}
+
+function renderStations(stations){
+  const box = document.getElementById("stations");
+  box.innerHTML = "";
+
+  stations.forEach(st => {
+    const div = document.createElement("div");
+    div.className = "station";
+
+    div.innerHTML = `
+      <h3>${show(st.station_id)}</h3>
+      <div class="info">讀取時間：${show(st.time)}</div>
+
+      <div class="sensor-grid">
+        <div class="item">土壤溫度 °C<span class="value">${show(st.soil_temp)}</span></div>
+        <div class="item">含水率 %<span class="value">${show(st.soil_moistureair)}</span></div>
+        <div class="item">EC µS/cm<span class="value">${show(st.ec)}</span></div>
+        <div class="item">pH<span class="value">${show(st.ph)}</span></div>
+        <div class="item">氮 N mg/kg<span class="value">${show(st.nitrogen)}</span></div>
+        <div class="item">磷 P mg/kg<span class="value">${show(st.phosphorus)}</span></div>
+        <div class="item">鉀 K mg/kg<span class="value">${show(st.potassium)}</span></div>
+      </div>
+    `;
+
+    box.appendChild(div);
+  });
+}
+
+loadData();
+setInterval(loadData, 600000);
+</script>
+
+</body>
+</html>
