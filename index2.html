@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>明亮木鱉果園 即時儀表板</title>
+
+<style>
+:root{
+  --bg:#dff5d8;
+  --card:#ffffff;
+  --main:#245953;
+  --text:#102a27;
+  --sub:#64748b;
+  --accent:#16a34a;
+  --border:#245953;
+}
+
+body.dark{
+  --bg:#07111f;
+  --card:#101c2e;
+  --main:#38bdf8;
+  --text:#e5f6ff;
+  --sub:#94a3b8;
+  --accent:#22c55e;
+  --border:#38bdf8;
+}
+
+body.clean{
+  --bg:#f4f4f5;
+  --card:#ffffff;
+  --main:#374151;
+  --text:#111827;
+  --sub:#6b7280;
+  --accent:#2563eb;
+  --border:#d1d5db;
+}
+
+*{box-sizing:border-box}
+
+body{
+  margin:0;
+  font-family:"Microsoft JhengHei", Arial, sans-serif;
+  background:var(--bg);
+  color:var(--text);
+}
+
+.wrap{
+  max-width:1280px;
+  margin:auto;
+  padding:18px;
+}
+
+.header{
+  background:var(--card);
+  border:4px solid var(--border);
+  border-radius:24px;
+  padding:18px;
+  text-align:center;
+  margin-bottom:14px;
+}
+
+.header h1{
+  margin:0;
+  font-size:42px;
+  letter-spacing:4px;
+}
+
+.meta{
+  margin-top:8px;
+  font-size:18px;
+  color:var(--sub);
+  font-weight:700;
+}
+
+.theme-bar{
+  display:flex;
+  gap:10px;
+  justify-content:center;
+  flex-wrap:wrap;
+  margin:14px 0;
+}
+
+button{
+  border:0;
+  border-radius:999px;
+  padding:11px 20px;
+  font-size:17px;
+  font-weight:900;
+  background:var(--main);
+  color:white;
+  cursor:pointer;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:14px;
+}
+
+.card,.station{
+  background:var(--card);
+  border:3px solid var(--border);
+  border-radius:22px;
+  padding:18px;
+  box-shadow:0 8px 18px rgba(0,0,0,.12);
+}
+
+.card h2,.station h2{
+  margin:0 0 14px 0;
+  color:var(--main);
+  font-size:28px;
+}
+
+.data-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:12px;
+}
+
+.item{
+  background:rgba(128,128,128,.12);
+  border-radius:16px;
+  padding:14px;
+  font-size:18px;
+  font-weight:900;
+  min-height:88px;
+}
+
+.value{
+  display:block;
+  color:var(--accent);
+  font-size:32px;
+  line-height:1.2;
+  margin-top:8px;
+  word-break:break-word;
+}
+
+.small-value{
+  font-size:20px;
+}
+
+.stations{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:14px;
+  margin-top:14px;
+}
+
+.footer{
+  margin-top:14px;
+  text-align:center;
+  color:var(--sub);
+  font-weight:800;
+}
+
+.status{
+  text-align:center;
+  margin-top:10px;
+  color:var(--main);
+  font-weight:900;
+}
+
+/* 手機模式 */
+@media(max-width:768px){
+  .wrap{
+    padding:10px;
+  }
+
+  .header{
+    border-width:3px;
+    border-radius:18px;
+    padding:14px;
+  }
+
+  .header h1{
+    font-size:30px;
+    letter-spacing:2px;
+  }
+
+  .meta{
+    font-size:14px;
+    line-height:1.6;
+  }
+
+  .grid,
+  .stations,
+  .data-grid{
+    grid-template-columns:1fr;
+  }
+
+  .card,.station{
+    padding:14px;
+    border-radius:18px;
+  }
+
+  .card h2,.station h2{
+    font-size:23px;
+  }
+
+  .item{
+    min-height:auto;
+    padding:12px;
+    font-size:17px;
+  }
+
+  .value{
+    font-size:28px;
+  }
+
+  .small-value{
+    font-size:18px;
+  }
+
+  button{
+    width:46%;
+    font-size:15px;
+    padding:10px 8px;
+  }
+}
+</style>
+</head>
+
+<body>
+<div class="wrap">
+
+  <div class="header">
+    <h1 id="projectName">明亮木鱉果園</h1>
+    <div class="meta">
+      位置：<span id="location">—</span>　
+      更新時間：<span id="updatedAt">—</span>
+    </div>
+  </div>
+
+  <div class="theme-bar">
+    <button onclick="setTheme('farm')">農業綠色</button>
+    <button onclick="setTheme('dark')">深色科技</button>
+    <button onclick="setTheme('clean')">簡約白色</button>
+    <button onclick="loadData()">立即更新</button>
+  </div>
+
+  <div class="grid">
+    <section class="card">
+      <h2>彰化溪湖鎮天氣</h2>
+      <div class="data-grid">
+        <div class="item">天氣狀況<span class="value" id="weatherText">—</span></div>
+        <div class="item">氣溫 °C<span class="value" id="airTemp">—</span></div>
+        <div class="item">濕度 %<span class="value" id="airHumidity">—</span></div>
+        <div class="item">降雨量 mm<span class="value" id="rainfall">—</span></div>
+        <div class="item">風速 m/s<span class="value" id="windSpeed">—</span></div>
+        <div class="item">風向 °<span class="value" id="windDirection">—</span></div>
+        <div class="item">氣壓 hPa<span class="value" id="airPressure">—</span></div>
+        <div class="item">氣象站<span class="value small-value" id="weatherStation">—</span></div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>今日溫度紀錄</h2>
+      <div class="data-grid">
+        <div class="item">今日最高溫 °C<span class="value" id="dailyHigh">—</span></div>
+        <div class="item">今日最低溫 °C<span class="value" id="dailyLow">—</span></div>
+        <div class="item">最高溫時間<span class="value small-value" id="dailyHighTime">—</span></div>
+        <div class="item">最低溫時間<span class="value small-value" id="dailyLowTime">—</span></div>
+        <div class="item">氣象觀測時間<span class="value small-value" id="weatherObsTime">—</span></div>
+        <div class="item">資料來源<span class="value small-value" id="weatherSource">中央氣象署 CWA</span></div>
+      </div>
+    </section>
+  </div>
+
+  <div class="stations" id="stations">
+    <div class="station">資料讀取中...</div>
+  </div>
+
+  <div class="status" id="status">等待資料更新...</div>
+
+  <div class="footer">
+    資料來源：GitHub data.json｜網頁每 10 分鐘自動更新一次
+  </div>
+
+</div>
+
+<script>
+const JSON_URL = "https://raw.githubusercontent.com/momo020406/Bright-Gnaphalium-Orchard/main/data.json";
+const REFRESH_MS = 600000;
+
+function setTheme(theme){
+  document.body.className = "";
+  if(theme === "dark") document.body.classList.add("dark");
+  if(theme === "clean") document.body.classList.add("clean");
+}
+
+function show(v){
+  return v === null || v === undefined || v === "" ? "—" : v;
+}
+
+function num(v, digits=1){
+  if(v === null || v === undefined || v === "") return "—";
+  const n = Number(v);
+  return Number.isFinite(n) ? n.toFixed(digits) : v;
+}
+
+async function loadData(){
+  const status = document.getElementById("status");
+  status.textContent = "資料讀取中...";
+
+  try{
+    const res = await fetch(JSON_URL + "?t=" + Date.now(), {cache:"no-store"});
+    if(!res.ok) throw new Error("HTTP " + res.status);
+
+    const data = await res.json();
+
+    document.getElementById("projectName").textContent = show(data.project);
+    document.getElementById("location").textContent = show(data.location);
+    document.getElementById("updatedAt").textContent = show(data.updated_at);
+
+    const w = data.weather || {};
+
+    document.getElementById("weatherText").textContent = show(w.weather_text);
+    document.getElementById("airTemp").textContent = num(w.air_temp, 1);
+    document.getElementById("airHumidity").textContent = num(w.air_humidity, 0);
+    document.getElementById("rainfall").textContent = num(w.rainfall, 1);
+    document.getElementById("windSpeed").textContent = num(w.wind_speed, 1);
+    document.getElementById("windDirection").textContent = num(w.wind_direction, 0);
+    document.getElementById("airPressure").textContent = num(w.air_pressure, 1);
+
+    document.getElementById("dailyHigh").textContent = num(w.daily_high_temp, 1);
+    document.getElementById("dailyLow").textContent = num(w.daily_low_temp, 1);
+    document.getElementById("dailyHighTime").textContent = show(w.daily_high_time);
+    document.getElementById("dailyLowTime").textContent = show(w.daily_low_time);
+    document.getElementById("weatherObsTime").textContent = show(w.weather_obs_time);
+    document.getElementById("weatherStation").textContent =
+      `${show(w.weather_station_name)} / ${show(w.weather_station_id)}`;
+
+    renderStations(data.stations || []);
+
+    status.textContent = "資料更新成功：" + new Date().toLocaleString("zh-TW");
+  }catch(err){
+    console.error(err);
+    status.textContent = "資料讀取失敗，請確認 data.json 是否存在或 GitHub Pages 網路狀態。";
+  }
+}
+
+function renderStations(stations){
+  const box = document.getElementById("stations");
+  box.innerHTML = "";
+
+  if(stations.length === 0){
+    box.innerHTML = `<div class="station">目前沒有站點資料</div>`;
+    return;
+  }
+
+  stations.forEach(st=>{
+    const div = document.createElement("section");
+    div.className = "station";
+
+    div.innerHTML = `
+      <h2>木鱉果${show(st.station_id)}</h2>
+      <div class="meta">感測時間：${show(st.time)}｜Channel：${show(st.source_channel_id)}</div>
+
+      <div class="data-grid" style="margin-top:12px;">
+        <div class="item">土壤溫度 °C<span class="value">${num(st.soil_temp,1)}</span></div>
+        <div class="item">土壤含水率 %<span class="value">${num(st.soil_moistureair,1)}</span></div>
+        <div class="item">EC µS/cm<span class="value">${num(st.ec,0)}</span></div>
+        <div class="item">pH<span class="value">${num(st.ph,1)}</span></div>
+        <div class="item">氮 N mg/kg<span class="value">${num(st.nitrogen,0)}</span></div>
+        <div class="item">磷 P mg/kg<span class="value">${num(st.phosphorus,0)}</span></div>
+        <div class="item">鉀 K mg/kg<span class="value">${num(st.potassium,0)}</span></div>
+      </div>
+    `;
+
+    box.appendChild(div);
+  });
+}
+
+loadData();
+setInterval(loadData, REFRESH_MS);
+</script>
+
+</body>
+</html>
