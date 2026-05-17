@@ -1,13 +1,13 @@
 {
   "project": "明亮木鱉果園",
-  "updated_at": "2026-05-17 19:18:18",
+  "updated_at": "2026-05-17 19:19:19",
   "timezone": "Asia/Taipei",
   "location": "彰化縣溪湖鎮",
   "weather_source": "中央氣象署 CWA",
   "weather_station_id": "C0G660",
   "weather_api_status": "異常",
   "weather_api_error": "CWA Weather 欄位回傳 -99、空值或無法判讀",
-  "weather_api_error_time": "2026-05-17 19:18:14",
+  "weather_api_error_time": "2026-05-17 19:19:14",
   "weather": {
     "weather_text": "資料讀取異常",
     "rainfall": 0.0,
@@ -27,17 +27,17 @@
     "weather_obs_time": "2026-05-17 19:00:00",
     "weather_api_status": "異常",
     "weather_api_error": "CWA Weather 欄位回傳 -99、空值或無法判讀",
-    "weather_api_error_time": "2026-05-17 19:18:14"
+    "weather_api_error_time": "2026-05-17 19:19:14"
   },
   "stations": [
     {
-      "time": "2026-05-17 19:17:58",
+      "time": "2026-05-17 19:19:19",
       "station_id": "第一站",
       "source_channel_id": "3233666",
       "soil_temp": 28.7,
       "soil_moistureair": 20.7,
-      "ec": 490.0,
-      "ph": 6.8,
+      "ec": 494.0,
+      "ph": 6.7,
       "nitrogen": 17.0,
       "phosphorus": 22.0,
       "potassium": 57.0,
@@ -59,19 +59,19 @@
       "weather_obs_time": "2026-05-17 19:00:00",
       "weather_api_status": "異常",
       "weather_api_error": "CWA Weather 欄位回傳 -99、空值或無法判讀",
-      "weather_api_error_time": "2026-05-17 19:18:14"
+      "weather_api_error_time": "2026-05-17 19:19:14"
     },
     {
-      "time": "2026-05-17 19:18:16",
+      "time": "2026-05-17 19:18:57",
       "station_id": "第二站",
       "source_channel_id": "3344832",
       "soil_temp": 27.9,
       "soil_moistureair": 30.4,
-      "ec": 704.0,
-      "ph": 7.1,
+      "ec": 698.0,
+      "ph": 7.2,
       "nitrogen": 21.0,
-      "phosphorus": 28.0,
-      "potassium": 70.0,
+      "phosphorus": 27.0,
+      "potassium": 69.0,
       "weather_text": "資料讀取異常",
       "rainfall": 0.0,
       "wind_speed": 0.7,
@@ -90,7 +90,7 @@
       "weather_obs_time": "2026-05-17 19:00:00",
       "weather_api_status": "異常",
       "weather_api_error": "CWA Weather 欄位回傳 -99、空值或無法判讀",
-      "weather_api_error_time": "2026-05-17 19:18:14"
+      "weather_api_error_time": "2026-05-17 19:19:14"
     }
   ]
 }
