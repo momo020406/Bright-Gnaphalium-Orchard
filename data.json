@@ -1,13 +1,13 @@
 {
   "project": "明亮木鱉果園",
-  "updated_at": "2026-05-29 16:16:34",
+  "updated_at": "2026-05-29 16:17:34",
   "timezone": "Asia/Taipei",
   "location": "彰化縣溪湖鎮",
   "weather_source": "中央氣象署 CWA",
   "weather_station_id": "C0G660",
   "weather_api_status": "異常",
   "weather_api_error": "CWA Weather 欄位回傳 -99、空值或無法判讀",
-  "weather_api_error_time": "2026-05-29 16:16:29",
+  "weather_api_error_time": "2026-05-29 16:17:29",
   "weather": {
     "weather_text": "資料讀取異常",
     "rainfall": 0.5,
@@ -27,17 +27,17 @@
     "weather_obs_time": "2026-05-29 16:00:00",
     "weather_api_status": "異常",
     "weather_api_error": "CWA Weather 欄位回傳 -99、空值或無法判讀",
-    "weather_api_error_time": "2026-05-29 16:16:29"
+    "weather_api_error_time": "2026-05-29 16:17:29"
   },
   "stations": [
     {
-      "time": "2026-05-29 16:16:51",
+      "time": "2026-05-29 16:18:11",
       "station_id": "第一站",
       "source_channel_id": "3233666",
-      "soil_temp": 35.5,
+      "soil_temp": 35.4,
       "soil_moistureair": 13.9,
       "ec": 294.0,
-      "ph": 6.2,
+      "ph": 6.6,
       "nitrogen": 14.0,
       "phosphorus": 19.0,
       "potassium": 48.0,
@@ -59,13 +59,13 @@
       "weather_obs_time": "2026-05-29 16:00:00",
       "weather_api_status": "異常",
       "weather_api_error": "CWA Weather 欄位回傳 -99、空值或無法判讀",
-      "weather_api_error_time": "2026-05-29 16:16:29"
+      "weather_api_error_time": "2026-05-29 16:17:29"
     },
     {
-      "time": "2026-05-29 16:17:10",
+      "time": "2026-05-29 16:17:54",
       "station_id": "第二站",
       "source_channel_id": "3344832",
-      "soil_temp": 34.9,
+      "soil_temp": 34.8,
       "soil_moistureair": 17.0,
       "ec": 179.0,
       "ph": 6.4,
@@ -90,7 +90,7 @@
       "weather_obs_time": "2026-05-29 16:00:00",
       "weather_api_status": "異常",
       "weather_api_error": "CWA Weather 欄位回傳 -99、空值或無法判讀",
-      "weather_api_error_time": "2026-05-29 16:16:29"
+      "weather_api_error_time": "2026-05-29 16:17:29"
     }
   ]
 }
