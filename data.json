@@ -1,13 +1,13 @@
 {
   "project": "明亮木鱉果園",
-  "updated_at": "2026-05-29 23:14:37",
+  "updated_at": "2026-05-29 23:15:35",
   "timezone": "Asia/Taipei",
   "location": "彰化縣溪湖鎮",
   "weather_source": "中央氣象署 CWA",
   "weather_station_id": "C0G660",
   "weather_api_status": "異常",
   "weather_api_error": "CWA Weather 欄位回傳 -99、空值或無法判讀",
-  "weather_api_error_time": "2026-05-29 23:14:30",
+  "weather_api_error_time": "2026-05-29 23:15:30",
   "weather": {
     "weather_text": "資料讀取異常",
     "rainfall": 0.5,
@@ -27,17 +27,17 @@
     "weather_obs_time": "2026-05-29 23:00:00",
     "weather_api_status": "異常",
     "weather_api_error": "CWA Weather 欄位回傳 -99、空值或無法判讀",
-    "weather_api_error_time": "2026-05-29 23:14:30"
+    "weather_api_error_time": "2026-05-29 23:15:30"
   },
   "stations": [
     {
-      "time": "2026-05-29 23:14:47",
+      "time": "2026-05-29 23:16:07",
       "station_id": "第一站",
       "source_channel_id": "3233666",
       "soil_temp": 29.1,
-      "soil_moistureair": 14.0,
-      "ec": 299.0,
-      "ph": 6.6,
+      "soil_moistureair": 14.2,
+      "ec": 298.0,
+      "ph": 6.9,
       "nitrogen": 14.0,
       "phosphorus": 19.0,
       "potassium": 49.0,
@@ -59,16 +59,16 @@
       "weather_obs_time": "2026-05-29 23:00:00",
       "weather_api_status": "異常",
       "weather_api_error": "CWA Weather 欄位回傳 -99、空值或無法判讀",
-      "weather_api_error_time": "2026-05-29 23:14:30"
+      "weather_api_error_time": "2026-05-29 23:15:30"
     },
     {
-      "time": "2026-05-29 23:15:07",
+      "time": "2026-05-29 23:15:48",
       "station_id": "第二站",
       "source_channel_id": "3344832",
       "soil_temp": 27.8,
       "soil_moistureair": 17.4,
       "ec": 177.0,
-      "ph": 6.1,
+      "ph": 6.6,
       "nitrogen": 13.0,
       "phosphorus": 17.0,
       "potassium": 43.0,
@@ -90,7 +90,7 @@
       "weather_obs_time": "2026-05-29 23:00:00",
       "weather_api_status": "異常",
       "weather_api_error": "CWA Weather 欄位回傳 -99、空值或無法判讀",
-      "weather_api_error_time": "2026-05-29 23:14:30"
+      "weather_api_error_time": "2026-05-29 23:15:30"
     }
   ]
 }
