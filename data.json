@@ -1,13 +1,13 @@
 {
   "project": "明亮木鱉果園",
-  "updated_at": "2026-05-30 01:14:35",
+  "updated_at": "2026-05-30 01:15:35",
   "timezone": "Asia/Taipei",
   "location": "彰化縣溪湖鎮",
   "weather_source": "中央氣象署 CWA",
   "weather_station_id": "C0G660",
   "weather_api_status": "異常",
   "weather_api_error": "CWA Weather 欄位回傳 -99、空值或無法判讀",
-  "weather_api_error_time": "2026-05-30 01:14:30",
+  "weather_api_error_time": "2026-05-30 01:15:30",
   "weather": {
     "weather_text": "資料讀取異常",
     "rainfall": 0.0,
@@ -27,17 +27,17 @@
     "weather_obs_time": "2026-05-30 01:00:00",
     "weather_api_status": "異常",
     "weather_api_error": "CWA Weather 欄位回傳 -99、空值或無法判讀",
-    "weather_api_error_time": "2026-05-30 01:14:30"
+    "weather_api_error_time": "2026-05-30 01:15:30"
   },
   "stations": [
     {
-      "time": "2026-05-30 01:15:03",
+      "time": "2026-05-30 01:15:43",
       "station_id": "第一站",
       "source_channel_id": "3233666",
       "soil_temp": 28.4,
       "soil_moistureair": 14.1,
       "ec": 298.0,
-      "ph": 6.5,
+      "ph": 6.3,
       "nitrogen": 14.0,
       "phosphorus": 19.0,
       "potassium": 49.0,
@@ -59,16 +59,16 @@
       "weather_obs_time": "2026-05-30 01:00:00",
       "weather_api_status": "異常",
       "weather_api_error": "CWA Weather 欄位回傳 -99、空值或無法判讀",
-      "weather_api_error_time": "2026-05-30 01:14:30"
+      "weather_api_error_time": "2026-05-30 01:15:30"
     },
     {
-      "time": "2026-05-30 01:14:43",
+      "time": "2026-05-30 01:16:04",
       "station_id": "第二站",
       "source_channel_id": "3344832",
       "soil_temp": 27.3,
       "soil_moistureair": 17.7,
       "ec": 180.0,
-      "ph": 7.0,
+      "ph": 6.8,
       "nitrogen": 13.0,
       "phosphorus": 17.0,
       "potassium": 43.0,
@@ -90,7 +90,7 @@
       "weather_obs_time": "2026-05-30 01:00:00",
       "weather_api_status": "異常",
       "weather_api_error": "CWA Weather 欄位回傳 -99、空值或無法判讀",
-      "weather_api_error_time": "2026-05-30 01:14:30"
+      "weather_api_error_time": "2026-05-30 01:15:30"
     }
   ]
 }
