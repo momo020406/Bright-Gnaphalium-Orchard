@@ -1,13 +1,13 @@
 {
   "project": "明亮木鱉果園",
-  "updated_at": "2026-05-29 17:11:35",
+  "updated_at": "2026-05-29 17:12:34",
   "timezone": "Asia/Taipei",
   "location": "彰化縣溪湖鎮",
   "weather_source": "中央氣象署 CWA",
   "weather_station_id": "C0G660",
   "weather_api_status": "異常",
   "weather_api_error": "CWA Weather 欄位回傳 -99、空值或無法判讀",
-  "weather_api_error_time": "2026-05-29 17:11:30",
+  "weather_api_error_time": "2026-05-29 17:12:30",
   "weather": {
     "weather_text": "資料讀取異常",
     "rainfall": 0.5,
@@ -27,16 +27,16 @@
     "weather_obs_time": "2026-05-29 17:00:00",
     "weather_api_status": "異常",
     "weather_api_error": "CWA Weather 欄位回傳 -99、空值或無法判讀",
-    "weather_api_error_time": "2026-05-29 17:11:30"
+    "weather_api_error_time": "2026-05-29 17:12:30"
   },
   "stations": [
     {
-      "time": "2026-05-29 17:11:56",
+      "time": "2026-05-29 17:13:17",
       "station_id": "第一站",
       "source_channel_id": "3233666",
       "soil_temp": 33.4,
-      "soil_moistureair": 13.9,
-      "ec": 295.0,
+      "soil_moistureair": 14.0,
+      "ec": 293.0,
       "ph": 6.8,
       "nitrogen": 14.0,
       "phosphorus": 19.0,
@@ -59,16 +59,16 @@
       "weather_obs_time": "2026-05-29 17:00:00",
       "weather_api_status": "異常",
       "weather_api_error": "CWA Weather 欄位回傳 -99、空值或無法判讀",
-      "weather_api_error_time": "2026-05-29 17:11:30"
+      "weather_api_error_time": "2026-05-29 17:12:30"
     },
     {
-      "time": "2026-05-29 17:12:17",
+      "time": "2026-05-29 17:12:57",
       "station_id": "第二站",
       "source_channel_id": "3344832",
       "soil_temp": 32.9,
-      "soil_moistureair": 16.9,
+      "soil_moistureair": 17.0,
       "ec": 177.0,
-      "ph": 5.8,
+      "ph": 6.0,
       "nitrogen": 13.0,
       "phosphorus": 17.0,
       "potassium": 43.0,
@@ -90,7 +90,7 @@
       "weather_obs_time": "2026-05-29 17:00:00",
       "weather_api_status": "異常",
       "weather_api_error": "CWA Weather 欄位回傳 -99、空值或無法判讀",
-      "weather_api_error_time": "2026-05-29 17:11:30"
+      "weather_api_error_time": "2026-05-29 17:12:30"
     }
   ]
 }
