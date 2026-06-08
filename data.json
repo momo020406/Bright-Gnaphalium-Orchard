@@ -1,13 +1,13 @@
 {
   "project": "明亮木鱉果園",
-  "updated_at": "2026-06-08 11:16:16",
+  "updated_at": "2026-06-08 11:17:16",
   "timezone": "Asia/Taipei",
   "location": "彰化縣溪湖鎮",
   "weather_source": "中央氣象署 CWA",
   "weather_station_id": "C0G660",
   "weather_api_status": "異常",
   "weather_api_error": "CWA Weather 欄位回傳 -99、空值或無法判讀",
-  "weather_api_error_time": "2026-06-08 11:16:10",
+  "weather_api_error_time": "2026-06-08 11:17:10",
   "weather": {
     "weather_text": "資料讀取異常",
     "rainfall": 13.5,
@@ -27,19 +27,19 @@
     "weather_obs_time": "2026-06-08 11:00:00",
     "weather_api_status": "異常",
     "weather_api_error": "CWA Weather 欄位回傳 -99、空值或無法判讀",
-    "weather_api_error_time": "2026-06-08 11:16:10"
+    "weather_api_error_time": "2026-06-08 11:17:10"
   },
   "stations": [
     {
-      "time": "2026-06-08 11:16:55",
+      "time": "2026-06-08 11:18:16",
       "station_id": "第一站",
       "source_channel_id": "3233666",
       "soil_temp": 27.0,
-      "soil_moistureair": 31.6,
-      "ec": 1318.0,
-      "ph": 6.3,
+      "soil_moistureair": 31.5,
+      "ec": 1326.0,
+      "ph": 5.9,
       "nitrogen": 34.0,
-      "phosphorus": 45.0,
+      "phosphorus": 46.0,
       "potassium": 114.0,
       "weather_text": "資料讀取異常",
       "rainfall": 13.5,
@@ -59,19 +59,19 @@
       "weather_obs_time": "2026-06-08 11:00:00",
       "weather_api_status": "異常",
       "weather_api_error": "CWA Weather 欄位回傳 -99、空值或無法判讀",
-      "weather_api_error_time": "2026-06-08 11:16:10"
+      "weather_api_error_time": "2026-06-08 11:17:10"
     },
     {
-      "time": "2026-06-08 11:17:22",
+      "time": "2026-06-08 11:18:01",
       "station_id": "第二站",
       "source_channel_id": "3344832",
       "soil_temp": 27.1,
-      "soil_moistureair": 31.6,
-      "ec": 701.0,
-      "ph": 6.6,
+      "soil_moistureair": 31.5,
+      "ec": 694.0,
+      "ph": 6.8,
       "nitrogen": 21.0,
       "phosphorus": 27.0,
-      "potassium": 70.0,
+      "potassium": 69.0,
       "weather_text": "資料讀取異常",
       "rainfall": 13.5,
       "wind_speed": 0.7,
@@ -90,7 +90,7 @@
       "weather_obs_time": "2026-06-08 11:00:00",
       "weather_api_status": "異常",
       "weather_api_error": "CWA Weather 欄位回傳 -99、空值或無法判讀",
-      "weather_api_error_time": "2026-06-08 11:16:10"
+      "weather_api_error_time": "2026-06-08 11:17:10"
     }
   ]
 }
