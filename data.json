@@ -1,13 +1,13 @@
 {
   "project": "明亮木鱉果園",
-  "updated_at": "2026-06-15 22:55:06",
+  "updated_at": "2026-06-15 22:56:05",
   "timezone": "Asia/Taipei",
   "location": "彰化縣溪湖鎮",
   "weather_source": "中央氣象署 CWA",
   "weather_station_id": "C0G660",
   "weather_api_status": "異常",
   "weather_api_error": "CWA Weather 欄位回傳 -99、空值或無法判讀",
-  "weather_api_error_time": "2026-06-15 22:54:59",
+  "weather_api_error_time": "2026-06-15 22:55:59",
   "weather": {
     "weather_text": "資料讀取異常",
     "rainfall": 16.0,
@@ -27,17 +27,17 @@
     "weather_obs_time": "2026-06-15 22:00:00",
     "weather_api_status": "異常",
     "weather_api_error": "CWA Weather 欄位回傳 -99、空值或無法判讀",
-    "weather_api_error_time": "2026-06-15 22:54:59"
+    "weather_api_error_time": "2026-06-15 22:55:59"
   },
   "stations": [
     {
-      "time": "2026-06-15 22:54:42",
+      "time": "2026-06-15 22:56:03",
       "station_id": "第一站",
       "source_channel_id": "3233666",
       "soil_temp": 25.9,
       "soil_moistureair": 28.4,
-      "ec": 215.0,
-      "ph": 6.8,
+      "ec": 214.0,
+      "ph": 6.9,
       "nitrogen": 13.0,
       "phosphorus": 18.0,
       "potassium": 45.0,
@@ -59,16 +59,16 @@
       "weather_obs_time": "2026-06-15 22:00:00",
       "weather_api_status": "異常",
       "weather_api_error": "CWA Weather 欄位回傳 -99、空值或無法判讀",
-      "weather_api_error_time": "2026-06-15 22:54:59"
+      "weather_api_error_time": "2026-06-15 22:55:59"
     },
     {
-      "time": "2026-06-15 22:54:43",
+      "time": "2026-06-15 22:56:04",
       "station_id": "第二站",
       "source_channel_id": "3344832",
       "soil_temp": 25.3,
       "soil_moistureair": 30.2,
-      "ec": 245.0,
-      "ph": 4.0,
+      "ec": 243.0,
+      "ph": 4.5,
       "nitrogen": 13.0,
       "phosphorus": 18.0,
       "potassium": 46.0,
@@ -90,7 +90,7 @@
       "weather_obs_time": "2026-06-15 22:00:00",
       "weather_api_status": "異常",
       "weather_api_error": "CWA Weather 欄位回傳 -99、空值或無法判讀",
-      "weather_api_error_time": "2026-06-15 22:54:59"
+      "weather_api_error_time": "2026-06-15 22:55:59"
     }
   ]
 }
