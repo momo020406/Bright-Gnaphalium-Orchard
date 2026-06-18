@@ -1,13 +1,13 @@
 {
   "project": "明亮木鱉果園",
-  "updated_at": "2026-06-19 03:16:22",
+  "updated_at": "2026-06-19 03:17:26",
   "timezone": "Asia/Taipei",
   "location": "彰化縣溪湖鎮",
   "weather_source": "中央氣象署 CWA",
   "weather_station_id": "C0G660",
   "weather_api_status": "異常",
   "weather_api_error": "CWA Weather 欄位回傳 -99、空值或無法判讀",
-  "weather_api_error_time": "2026-06-19 03:16:17",
+  "weather_api_error_time": "2026-06-19 03:17:17",
   "weather": {
     "weather_text": "資料讀取異常",
     "rainfall": 0.0,
@@ -27,17 +27,17 @@
     "weather_obs_time": "2026-06-19 03:00:00",
     "weather_api_status": "異常",
     "weather_api_error": "CWA Weather 欄位回傳 -99、空值或無法判讀",
-    "weather_api_error_time": "2026-06-19 03:16:17"
+    "weather_api_error_time": "2026-06-19 03:17:17"
   },
   "stations": [
     {
-      "time": "2026-06-19 03:15:50",
+      "time": "2026-06-19 03:17:10",
       "station_id": "第一站",
       "source_channel_id": "3233666",
       "soil_temp": 27.3,
       "soil_moistureair": 22.8,
-      "ec": 214.0,
-      "ph": 7.1,
+      "ec": 213.0,
+      "ph": 7.0,
       "nitrogen": 13.0,
       "phosphorus": 18.0,
       "potassium": 45.0,
@@ -59,15 +59,15 @@
       "weather_obs_time": "2026-06-19 03:00:00",
       "weather_api_status": "異常",
       "weather_api_error": "CWA Weather 欄位回傳 -99、空值或無法判讀",
-      "weather_api_error_time": "2026-06-19 03:16:17"
+      "weather_api_error_time": "2026-06-19 03:17:17"
     },
     {
-      "time": "2026-06-19 03:16:02",
+      "time": "2026-06-19 03:17:18",
       "station_id": "第二站",
       "source_channel_id": "3344832",
       "soil_temp": 26.8,
-      "soil_moistureair": 26.5,
-      "ec": 189.0,
+      "soil_moistureair": 26.6,
+      "ec": 190.0,
       "ph": 7.0,
       "nitrogen": 13.0,
       "phosphorus": 17.0,
@@ -90,7 +90,7 @@
       "weather_obs_time": "2026-06-19 03:00:00",
       "weather_api_status": "異常",
       "weather_api_error": "CWA Weather 欄位回傳 -99、空值或無法判讀",
-      "weather_api_error_time": "2026-06-19 03:16:17"
+      "weather_api_error_time": "2026-06-19 03:17:17"
     }
   ]
 }
