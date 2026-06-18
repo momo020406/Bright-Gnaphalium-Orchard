@@ -1,13 +1,13 @@
 {
   "project": "明亮木鱉果園",
-  "updated_at": "2026-06-18 09:20:18",
+  "updated_at": "2026-06-18 09:21:18",
   "timezone": "Asia/Taipei",
   "location": "彰化縣溪湖鎮",
   "weather_source": "中央氣象署 CWA",
   "weather_station_id": "C0G660",
   "weather_api_status": "異常",
   "weather_api_error": "CWA Weather 欄位回傳 -99、空值或無法判讀",
-  "weather_api_error_time": "2026-06-18 09:20:13",
+  "weather_api_error_time": "2026-06-18 09:21:13",
   "weather": {
     "weather_text": "資料讀取異常",
     "rainfall": 0.0,
@@ -27,16 +27,16 @@
     "weather_obs_time": "2026-06-18 09:00:00",
     "weather_api_status": "異常",
     "weather_api_error": "CWA Weather 欄位回傳 -99、空值或無法判讀",
-    "weather_api_error_time": "2026-06-18 09:20:13"
+    "weather_api_error_time": "2026-06-18 09:21:13"
   },
   "stations": [
     {
-      "time": "2026-06-18 09:20:05",
+      "time": "2026-06-18 09:20:46",
       "station_id": "第一站",
       "source_channel_id": "3233666",
       "soil_temp": 30.8,
-      "soil_moistureair": 24.8,
-      "ec": 230.0,
+      "soil_moistureair": 24.9,
+      "ec": 231.0,
       "ph": 6.2,
       "nitrogen": 13.0,
       "phosphorus": 18.0,
@@ -59,16 +59,16 @@
       "weather_obs_time": "2026-06-18 09:00:00",
       "weather_api_status": "異常",
       "weather_api_error": "CWA Weather 欄位回傳 -99、空值或無法判讀",
-      "weather_api_error_time": "2026-06-18 09:20:13"
+      "weather_api_error_time": "2026-06-18 09:21:13"
     },
     {
-      "time": "2026-06-18 09:19:41",
+      "time": "2026-06-18 09:21:02",
       "station_id": "第二站",
       "source_channel_id": "3344832",
-      "soil_temp": 34.3,
+      "soil_temp": 34.4,
       "soil_moistureair": 28.0,
-      "ec": 256.0,
-      "ph": 6.5,
+      "ec": 255.0,
+      "ph": 6.8,
       "nitrogen": 14.0,
       "phosphorus": 19.0,
       "potassium": 47.0,
@@ -90,7 +90,7 @@
       "weather_obs_time": "2026-06-18 09:00:00",
       "weather_api_status": "異常",
       "weather_api_error": "CWA Weather 欄位回傳 -99、空值或無法判讀",
-      "weather_api_error_time": "2026-06-18 09:20:13"
+      "weather_api_error_time": "2026-06-18 09:21:13"
     }
   ]
 }
