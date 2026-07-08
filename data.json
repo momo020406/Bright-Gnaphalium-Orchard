@@ -1,13 +1,13 @@
 {
   "project": "明亮木鱉果園",
-  "updated_at": "2026-07-08 21:11:51",
+  "updated_at": "2026-07-08 21:12:46",
   "timezone": "Asia/Taipei",
   "location": "彰化縣溪湖鎮",
   "weather_source": "中央氣象署 CWA",
   "weather_station_id": "C0G660",
   "weather_api_status": "異常",
   "weather_api_error": "CWA Weather 欄位回傳 -99、空值或無法判讀",
-  "weather_api_error_time": "2026-07-08 21:11:40",
+  "weather_api_error_time": "2026-07-08 21:12:40",
   "weather": {
     "weather_text": "資料讀取異常",
     "rainfall": null,
@@ -27,17 +27,17 @@
     "weather_obs_time": "2026-07-08 21:00:00",
     "weather_api_status": "異常",
     "weather_api_error": "CWA Weather 欄位回傳 -99、空值或無法判讀",
-    "weather_api_error_time": "2026-07-08 21:11:40"
+    "weather_api_error_time": "2026-07-08 21:12:40"
   },
   "stations": [
     {
-      "time": "2026-07-08 21:11:21",
+      "time": "2026-07-08 21:12:42",
       "station_id": "第一站",
       "source_channel_id": "3233666",
       "soil_temp": 28.8,
       "soil_moistureair": 14.5,
       "ec": 84.0,
-      "ph": 7.1,
+      "ph": 7.0,
       "nitrogen": 12.0,
       "phosphorus": 16.0,
       "potassium": 40.0,
@@ -59,16 +59,16 @@
       "weather_obs_time": "2026-07-08 21:00:00",
       "weather_api_status": "異常",
       "weather_api_error": "CWA Weather 欄位回傳 -99、空值或無法判讀",
-      "weather_api_error_time": "2026-07-08 21:11:40"
+      "weather_api_error_time": "2026-07-08 21:12:40"
     },
     {
-      "time": "2026-07-08 21:11:41",
+      "time": "2026-07-08 21:12:22",
       "station_id": "第二站",
       "source_channel_id": "3344832",
       "soil_temp": 28.0,
       "soil_moistureair": 20.8,
-      "ec": 197.0,
-      "ph": 7.0,
+      "ec": 198.0,
+      "ph": 6.9,
       "nitrogen": 13.0,
       "phosphorus": 17.0,
       "potassium": 44.0,
@@ -90,7 +90,7 @@
       "weather_obs_time": "2026-07-08 21:00:00",
       "weather_api_status": "異常",
       "weather_api_error": "CWA Weather 欄位回傳 -99、空值或無法判讀",
-      "weather_api_error_time": "2026-07-08 21:11:40"
+      "weather_api_error_time": "2026-07-08 21:12:40"
     }
   ]
 }
