@@ -1,13 +1,13 @@
 {
   "project": "明亮木鱉果園",
-  "updated_at": "2026-07-09 16:59:42",
+  "updated_at": "2026-07-09 17:00:42",
   "timezone": "Asia/Taipei",
   "location": "彰化縣溪湖鎮",
   "weather_source": "中央氣象署 CWA",
   "weather_station_id": "C0G660",
   "weather_api_status": "異常",
   "weather_api_error": "CWA Weather 欄位回傳 -99、空值或無法判讀",
-  "weather_api_error_time": "2026-07-09 16:59:35",
+  "weather_api_error_time": "2026-07-09 17:00:35",
   "weather": {
     "weather_text": "資料讀取異常",
     "rainfall": 0.0,
@@ -27,17 +27,17 @@
     "weather_obs_time": "2026-07-09 16:00:00",
     "weather_api_status": "異常",
     "weather_api_error": "CWA Weather 欄位回傳 -99、空值或無法判讀",
-    "weather_api_error_time": "2026-07-09 16:59:35"
+    "weather_api_error_time": "2026-07-09 17:00:35"
   },
   "stations": [
     {
-      "time": "2026-07-09 16:59:17",
+      "time": "2026-07-09 16:59:58",
       "station_id": "第一站",
       "source_channel_id": "3233666",
       "soil_temp": 31.8,
-      "soil_moistureair": 13.9,
+      "soil_moistureair": 14.0,
       "ec": 71.0,
-      "ph": 7.2,
+      "ph": 6.9,
       "nitrogen": 11.0,
       "phosphorus": 15.0,
       "potassium": 39.0,
@@ -59,16 +59,16 @@
       "weather_obs_time": "2026-07-09 16:00:00",
       "weather_api_status": "異常",
       "weather_api_error": "CWA Weather 欄位回傳 -99、空值或無法判讀",
-      "weather_api_error_time": "2026-07-09 16:59:35"
+      "weather_api_error_time": "2026-07-09 17:00:35"
     },
     {
-      "time": "2026-07-09 16:58:59",
+      "time": "2026-07-09 17:00:19",
       "station_id": "第二站",
       "source_channel_id": "3344832",
       "soil_temp": 31.3,
       "soil_moistureair": 20.4,
       "ec": 190.0,
-      "ph": 7.0,
+      "ph": 7.1,
       "nitrogen": 13.0,
       "phosphorus": 17.0,
       "potassium": 44.0,
@@ -90,7 +90,7 @@
       "weather_obs_time": "2026-07-09 16:00:00",
       "weather_api_status": "異常",
       "weather_api_error": "CWA Weather 欄位回傳 -99、空值或無法判讀",
-      "weather_api_error_time": "2026-07-09 16:59:35"
+      "weather_api_error_time": "2026-07-09 17:00:35"
     }
   ]
 }
