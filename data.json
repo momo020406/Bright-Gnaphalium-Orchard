@@ -1,15 +1,15 @@
 {
   "project": "明亮木鱉果園",
-  "updated_at": "2026-07-15 01:27:15",
+  "updated_at": "2026-07-15 01:28:11",
   "timezone": "Asia/Taipei",
   "location": "彰化縣溪湖鎮",
   "weather_source": "中央氣象署 CWA",
   "weather_station_id": "C0G660",
-  "weather_api_status": "成功",
-  "weather_api_error": null,
-  "weather_api_error_time": "",
+  "weather_api_status": "異常",
+  "weather_api_error": "CWA Weather 欄位回傳 -99、空值或無法判讀",
+  "weather_api_error_time": "2026-07-15 01:28:04",
   "weather": {
-    "weather_text": "晴",
+    "weather_text": "資料讀取異常",
     "rainfall": 0.0,
     "wind_speed": 0.0,
     "wind_direction": 0.0,
@@ -25,9 +25,9 @@
     "weather_county": "彰化縣",
     "weather_town": "溪湖鎮",
     "weather_obs_time": "2026-07-15 01:00:00",
-    "weather_api_status": "成功",
-    "weather_api_error": null,
-    "weather_api_error_time": null
+    "weather_api_status": "異常",
+    "weather_api_error": "CWA Weather 欄位回傳 -99、空值或無法判讀",
+    "weather_api_error_time": "2026-07-15 01:28:04"
   },
   "stations": [
     {
@@ -41,7 +41,7 @@
       "nitrogen": 15.0,
       "phosphorus": 20.0,
       "potassium": 52.0,
-      "weather_text": "晴",
+      "weather_text": "資料讀取異常",
       "rainfall": 0.0,
       "wind_speed": 0.0,
       "wind_direction": 0.0,
@@ -57,22 +57,22 @@
       "weather_county": "彰化縣",
       "weather_town": "溪湖鎮",
       "weather_obs_time": "2026-07-15 01:00:00",
-      "weather_api_status": "成功",
-      "weather_api_error": null,
-      "weather_api_error_time": null
+      "weather_api_status": "異常",
+      "weather_api_error": "CWA Weather 欄位回傳 -99、空值或無法判讀",
+      "weather_api_error_time": "2026-07-15 01:28:04"
     },
     {
-      "time": "2026-07-15 01:27:22",
+      "time": "2026-07-15 01:28:04",
       "station_id": "第二站",
       "source_channel_id": "3344832",
-      "soil_temp": 27.6,
-      "soil_moistureair": 25.9,
-      "ec": 554.0,
+      "soil_temp": 27.5,
+      "soil_moistureair": 26.0,
+      "ec": 552.0,
       "ph": 7.1,
       "nitrogen": 18.0,
       "phosphorus": 24.0,
       "potassium": 60.0,
-      "weather_text": "晴",
+      "weather_text": "資料讀取異常",
       "rainfall": 0.0,
       "wind_speed": 0.0,
       "wind_direction": 0.0,
@@ -88,9 +88,9 @@
       "weather_county": "彰化縣",
       "weather_town": "溪湖鎮",
       "weather_obs_time": "2026-07-15 01:00:00",
-      "weather_api_status": "成功",
-      "weather_api_error": null,
-      "weather_api_error_time": null
+      "weather_api_status": "異常",
+      "weather_api_error": "CWA Weather 欄位回傳 -99、空值或無法判讀",
+      "weather_api_error_time": "2026-07-15 01:28:04"
     }
   ]
 }
