@@ -1,13 +1,13 @@
 {
   "project": "明亮木鱉果園",
-  "updated_at": "2026-07-26 18:08:31",
+  "updated_at": "2026-07-26 18:09:34",
   "timezone": "Asia/Taipei",
   "location": "彰化縣溪湖鎮",
   "weather_source": "中央氣象署 CWA",
   "weather_station_id": "C0G660",
   "weather_api_status": "異常",
   "weather_api_error": "CWA Weather 欄位回傳 -99、空值或無法判讀",
-  "weather_api_error_time": "2026-07-26 18:08:19",
+  "weather_api_error_time": "2026-07-26 18:09:19",
   "weather": {
     "weather_text": "資料讀取異常",
     "rainfall": 6.5,
@@ -27,7 +27,7 @@
     "weather_obs_time": "2026-07-26 18:00:00",
     "weather_api_status": "異常",
     "weather_api_error": "CWA Weather 欄位回傳 -99、空值或無法判讀",
-    "weather_api_error_time": "2026-07-26 18:08:19"
+    "weather_api_error_time": "2026-07-26 18:09:19"
   },
   "stations": [
     {
@@ -59,19 +59,19 @@
       "weather_obs_time": "2026-07-26 18:00:00",
       "weather_api_status": "異常",
       "weather_api_error": "CWA Weather 欄位回傳 -99、空值或無法判讀",
-      "weather_api_error_time": "2026-07-26 18:08:19"
+      "weather_api_error_time": "2026-07-26 18:09:19"
     },
     {
-      "time": "2026-07-26 18:08:35",
+      "time": "2026-07-26 18:09:16",
       "station_id": "第二站",
       "source_channel_id": "3344832",
       "soil_temp": 27.3,
       "soil_moistureair": 30.3,
-      "ec": 752.0,
-      "ph": 4.2,
+      "ec": 755.0,
+      "ph": 4.0,
       "nitrogen": 22.0,
       "phosphorus": 30.0,
-      "potassium": 75.0,
+      "potassium": 76.0,
       "weather_text": "資料讀取異常",
       "rainfall": 6.5,
       "wind_speed": 0.0,
@@ -90,7 +90,7 @@
       "weather_obs_time": "2026-07-26 18:00:00",
       "weather_api_status": "異常",
       "weather_api_error": "CWA Weather 欄位回傳 -99、空值或無法判讀",
-      "weather_api_error_time": "2026-07-26 18:08:19"
+      "weather_api_error_time": "2026-07-26 18:09:19"
     }
   ]
 }
