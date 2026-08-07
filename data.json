@@ -1,13 +1,13 @@
 {
   "project": "明亮木鱉果園",
-  "updated_at": "2026-08-07 16:09:04",
+  "updated_at": "2026-08-07 16:10:08",
   "timezone": "Asia/Taipei",
   "location": "彰化縣溪湖鎮",
   "weather_source": "中央氣象署 CWA",
   "weather_station_id": "C0G660",
   "weather_api_status": "異常",
   "weather_api_error": "CWA Weather 欄位回傳 -99、空值或無法判讀",
-  "weather_api_error_time": "2026-08-07 16:08:54",
+  "weather_api_error_time": "2026-08-07 16:09:54",
   "weather": {
     "weather_text": "資料讀取異常",
     "rainfall": 0.0,
@@ -27,17 +27,17 @@
     "weather_obs_time": "2026-08-07 16:00:00",
     "weather_api_status": "異常",
     "weather_api_error": "CWA Weather 欄位回傳 -99、空值或無法判讀",
-    "weather_api_error_time": "2026-08-07 16:08:54"
+    "weather_api_error_time": "2026-08-07 16:09:54"
   },
   "stations": [
     {
-      "time": "2026-08-07 16:10:59",
+      "time": "2026-08-07 16:11:39",
       "station_id": "第一站",
       "source_channel_id": "3233666",
       "soil_temp": 31.5,
       "soil_moistureair": 13.9,
-      "ec": 131.0,
-      "ph": 6.9,
+      "ec": 132.0,
+      "ph": 6.8,
       "nitrogen": 12.0,
       "phosphorus": 16.0,
       "potassium": 41.0,
@@ -59,16 +59,16 @@
       "weather_obs_time": "2026-08-07 16:00:00",
       "weather_api_status": "異常",
       "weather_api_error": "CWA Weather 欄位回傳 -99、空值或無法判讀",
-      "weather_api_error_time": "2026-08-07 16:08:54"
+      "weather_api_error_time": "2026-08-07 16:09:54"
     },
     {
-      "time": "2026-08-07 16:11:00",
+      "time": "2026-08-07 16:11:37",
       "station_id": "第二站",
       "source_channel_id": "3344832",
       "soil_temp": 30.8,
       "soil_moistureair": 20.6,
-      "ec": 221.0,
-      "ph": 6.9,
+      "ec": 222.0,
+      "ph": 6.2,
       "nitrogen": 13.0,
       "phosphorus": 18.0,
       "potassium": 45.0,
@@ -90,7 +90,7 @@
       "weather_obs_time": "2026-08-07 16:00:00",
       "weather_api_status": "異常",
       "weather_api_error": "CWA Weather 欄位回傳 -99、空值或無法判讀",
-      "weather_api_error_time": "2026-08-07 16:08:54"
+      "weather_api_error_time": "2026-08-07 16:09:54"
     }
   ]
 }
