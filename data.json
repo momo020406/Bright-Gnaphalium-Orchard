@@ -1,6 +1,6 @@
 {
   "project": "明亮木鱉果園",
-  "updated_at": "2026-08-29 06:25:28",
+  "updated_at": "2026-08-29 06:26:32",
   "timezone": "Asia/Taipei",
   "location": "彰化縣溪湖鎮",
   "weather_source": "中央氣象署 CWA",
@@ -31,12 +31,12 @@
   },
   "stations": [
     {
-      "time": "2026-08-29 06:25:20",
+      "time": "2026-08-29 06:25:54",
       "station_id": "第一站",
       "source_channel_id": "3233666",
       "soil_temp": 27.1,
-      "soil_moistureair": 25.1,
-      "ec": 401.0,
+      "soil_moistureair": 25.0,
+      "ec": 402.0,
       "ph": 6.6,
       "nitrogen": 16.0,
       "phosphorus": 21.0,
@@ -62,12 +62,12 @@
       "weather_api_error_time": null
     },
     {
-      "time": "2026-08-29 06:25:23",
+      "time": "2026-08-29 06:26:03",
       "station_id": "第二站",
       "source_channel_id": "3344832",
       "soil_temp": 26.6,
-      "soil_moistureair": 33.8,
-      "ec": 342.0,
+      "soil_moistureair": 33.7,
+      "ec": 340.0,
       "ph": 6.8,
       "nitrogen": 15.0,
       "phosphorus": 20.0,
