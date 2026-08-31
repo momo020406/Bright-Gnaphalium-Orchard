@@ -1,13 +1,13 @@
 {
   "project": "明亮木鱉果園",
-  "updated_at": "2026-08-31 18:21:28",
+  "updated_at": "2026-08-31 18:22:29",
   "timezone": "Asia/Taipei",
   "location": "彰化縣溪湖鎮",
   "weather_source": "中央氣象署 CWA",
   "weather_station_id": "C0G660",
   "weather_api_status": "異常",
   "weather_api_error": "CWA Weather 欄位回傳 -99、空值或無法判讀",
-  "weather_api_error_time": "2026-08-31 18:21:11",
+  "weather_api_error_time": "2026-08-31 18:22:11",
   "weather": {
     "weather_text": "資料讀取異常",
     "rainfall": 12.5,
@@ -27,17 +27,17 @@
     "weather_obs_time": "2026-08-31 18:00:00",
     "weather_api_status": "異常",
     "weather_api_error": "CWA Weather 欄位回傳 -99、空值或無法判讀",
-    "weather_api_error_time": "2026-08-31 18:21:11"
+    "weather_api_error_time": "2026-08-31 18:22:11"
   },
   "stations": [
     {
-      "time": "2026-08-31 18:20:40",
+      "time": "2026-08-31 18:22:00",
       "station_id": "第一站",
       "source_channel_id": "3233666",
       "soil_temp": 25.9,
-      "soil_moistureair": 34.9,
-      "ec": 322.0,
-      "ph": 6.4,
+      "soil_moistureair": 34.8,
+      "ec": 320.0,
+      "ph": 6.0,
       "nitrogen": 15.0,
       "phosphorus": 20.0,
       "potassium": 50.0,
@@ -59,16 +59,16 @@
       "weather_obs_time": "2026-08-31 18:00:00",
       "weather_api_status": "異常",
       "weather_api_error": "CWA Weather 欄位回傳 -99、空值或無法判讀",
-      "weather_api_error_time": "2026-08-31 18:21:11"
+      "weather_api_error_time": "2026-08-31 18:22:11"
     },
     {
-      "time": "2026-08-31 18:21:16",
+      "time": "2026-08-31 18:21:56",
       "station_id": "第二站",
       "source_channel_id": "3344832",
       "soil_temp": 25.9,
-      "soil_moistureair": 36.6,
-      "ec": 354.0,
-      "ph": 5.1,
+      "soil_moistureair": 36.7,
+      "ec": 359.0,
+      "ph": 4.9,
       "nitrogen": 15.0,
       "phosphorus": 20.0,
       "potassium": 52.0,
@@ -90,7 +90,7 @@
       "weather_obs_time": "2026-08-31 18:00:00",
       "weather_api_status": "異常",
       "weather_api_error": "CWA Weather 欄位回傳 -99、空值或無法判讀",
-      "weather_api_error_time": "2026-08-31 18:21:11"
+      "weather_api_error_time": "2026-08-31 18:22:11"
     }
   ]
 }
