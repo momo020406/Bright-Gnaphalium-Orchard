@@ -1,13 +1,13 @@
 {
   "project": "明亮木鱉果園",
-  "updated_at": "2026-08-31 21:15:29",
+  "updated_at": "2026-08-31 21:16:29",
   "timezone": "Asia/Taipei",
   "location": "彰化縣溪湖鎮",
   "weather_source": "中央氣象署 CWA",
   "weather_station_id": "C0G660",
   "weather_api_status": "異常",
   "weather_api_error": "CWA Weather 欄位回傳 -99、空值或無法判讀",
-  "weather_api_error_time": "2026-08-31 21:15:12",
+  "weather_api_error_time": "2026-08-31 21:16:12",
   "weather": {
     "weather_text": "資料讀取異常",
     "rainfall": 13.5,
@@ -27,16 +27,16 @@
     "weather_obs_time": "2026-08-31 21:00:00",
     "weather_api_status": "異常",
     "weather_api_error": "CWA Weather 欄位回傳 -99、空值或無法判讀",
-    "weather_api_error_time": "2026-08-31 21:15:12"
+    "weather_api_error_time": "2026-08-31 21:16:12"
   },
   "stations": [
     {
-      "time": "2026-08-31 21:14:42",
+      "time": "2026-08-31 21:16:06",
       "station_id": "第一站",
       "source_channel_id": "3233666",
       "soil_temp": 25.9,
-      "soil_moistureair": 33.0,
-      "ec": 289.0,
+      "soil_moistureair": 32.9,
+      "ec": 288.0,
       "ph": 6.8,
       "nitrogen": 14.0,
       "phosphorus": 19.0,
@@ -59,16 +59,16 @@
       "weather_obs_time": "2026-08-31 21:00:00",
       "weather_api_status": "異常",
       "weather_api_error": "CWA Weather 欄位回傳 -99、空值或無法判讀",
-      "weather_api_error_time": "2026-08-31 21:15:12"
+      "weather_api_error_time": "2026-08-31 21:16:12"
     },
     {
-      "time": "2026-08-31 21:15:18",
+      "time": "2026-08-31 21:15:59",
       "station_id": "第二站",
       "source_channel_id": "3344832",
       "soil_temp": 25.8,
       "soil_moistureair": 35.7,
-      "ec": 331.0,
-      "ph": 5.2,
+      "ec": 323.0,
+      "ph": 6.3,
       "nitrogen": 15.0,
       "phosphorus": 20.0,
       "potassium": 50.0,
@@ -90,7 +90,7 @@
       "weather_obs_time": "2026-08-31 21:00:00",
       "weather_api_status": "異常",
       "weather_api_error": "CWA Weather 欄位回傳 -99、空值或無法判讀",
-      "weather_api_error_time": "2026-08-31 21:15:12"
+      "weather_api_error_time": "2026-08-31 21:16:12"
     }
   ]
 }
