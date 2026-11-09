@@ -1,13 +1,13 @@
 {
   "project": "明亮木鱉果園",
-  "updated_at": "2026-11-10 02:36:16",
+  "updated_at": "2026-11-10 02:38:09",
   "timezone": "Asia/Taipei",
   "location": "彰化縣溪湖鎮",
   "weather_source": "中央氣象署 CWA",
   "weather_station_id": "C0G660",
   "weather_api_status": "失敗",
-  "weather_api_error": "ConnectTimeout: HTTPSConnectionPool(host='opendata.cwa.gov.tw', port=443): Max retries exceeded with url: /api/v1/rest/datastore/O-A0001-001?Authorization=CWA-4A8A0D9D-95EA-4DA0-A62C-2DC7A8909F06&StationId=C0G660&format=JSON (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000019CB5ADCE10>, 'Connection to opendata.cwa.gov.tw timed out. (connect timeout=10)'))",
-  "weather_api_error_time": "2026-11-10 02:35:51",
+  "weather_api_error": "ConnectTimeout: HTTPSConnectionPool(host='opendata.cwa.gov.tw', port=443): Max retries exceeded with url: /api/v1/rest/datastore/O-A0001-001?Authorization=CWA-4A8A0D9D-95EA-4DA0-A62C-2DC7A8909F06&StationId=C0G660&format=JSON (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000019CB5ADCCD0>, 'Connection to opendata.cwa.gov.tw timed out. (connect timeout=10)'))",
+  "weather_api_error_time": "2026-11-10 02:36:51",
   "weather": {
     "weather_text": "資料讀取異常",
     "rainfall": null,
@@ -26,18 +26,18 @@
     "weather_town": "溪湖鎮",
     "weather_obs_time": null,
     "weather_api_status": "失敗",
-    "weather_api_error": "ConnectTimeout: HTTPSConnectionPool(host='opendata.cwa.gov.tw', port=443): Max retries exceeded with url: /api/v1/rest/datastore/O-A0001-001?Authorization=CWA-4A8A0D9D-95EA-4DA0-A62C-2DC7A8909F06&StationId=C0G660&format=JSON (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000019CB5ADCE10>, 'Connection to opendata.cwa.gov.tw timed out. (connect timeout=10)'))",
-    "weather_api_error_time": "2026-11-10 02:35:51"
+    "weather_api_error": "ConnectTimeout: HTTPSConnectionPool(host='opendata.cwa.gov.tw', port=443): Max retries exceeded with url: /api/v1/rest/datastore/O-A0001-001?Authorization=CWA-4A8A0D9D-95EA-4DA0-A62C-2DC7A8909F06&StationId=C0G660&format=JSON (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000019CB5ADCCD0>, 'Connection to opendata.cwa.gov.tw timed out. (connect timeout=10)'))",
+    "weather_api_error_time": "2026-11-10 02:36:51"
   },
   "stations": [
     {
-      "time": "2026-11-10 02:35:37",
+      "time": "2026-11-10 02:36:17",
       "station_id": "第一站",
       "source_channel_id": "3233666",
       "soil_temp": 18.9,
-      "soil_moistureair": 11.8,
-      "ec": 237.0,
-      "ph": 6.7,
+      "soil_moistureair": 11.9,
+      "ec": 236.0,
+      "ph": 7.1,
       "nitrogen": 13.0,
       "phosphorus": 18.0,
       "potassium": 46.0,
@@ -58,20 +58,20 @@
       "weather_town": "溪湖鎮",
       "weather_obs_time": null,
       "weather_api_status": "失敗",
-      "weather_api_error": "ConnectTimeout: HTTPSConnectionPool(host='opendata.cwa.gov.tw', port=443): Max retries exceeded with url: /api/v1/rest/datastore/O-A0001-001?Authorization=CWA-4A8A0D9D-95EA-4DA0-A62C-2DC7A8909F06&StationId=C0G660&format=JSON (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000019CB5ADCE10>, 'Connection to opendata.cwa.gov.tw timed out. (connect timeout=10)'))",
-      "weather_api_error_time": "2026-11-10 02:35:51"
+      "weather_api_error": "ConnectTimeout: HTTPSConnectionPool(host='opendata.cwa.gov.tw', port=443): Max retries exceeded with url: /api/v1/rest/datastore/O-A0001-001?Authorization=CWA-4A8A0D9D-95EA-4DA0-A62C-2DC7A8909F06&StationId=C0G660&format=JSON (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000019CB5ADCCD0>, 'Connection to opendata.cwa.gov.tw timed out. (connect timeout=10)'))",
+      "weather_api_error_time": "2026-11-10 02:36:51"
     },
     {
-      "time": "2026-11-10 02:35:23",
+      "time": "2026-11-10 02:36:44",
       "station_id": "第二站",
       "source_channel_id": "3344832",
       "soil_temp": 19.1,
       "soil_moistureair": 28.6,
-      "ec": 469.0,
-      "ph": 7.1,
-      "nitrogen": 16.0,
-      "phosphorus": 21.0,
-      "potassium": 55.0,
+      "ec": 474.0,
+      "ph": 7.0,
+      "nitrogen": 17.0,
+      "phosphorus": 22.0,
+      "potassium": 56.0,
       "weather_text": "資料讀取異常",
       "rainfall": null,
       "wind_speed": null,
@@ -89,8 +89,8 @@
       "weather_town": "溪湖鎮",
       "weather_obs_time": null,
       "weather_api_status": "失敗",
-      "weather_api_error": "ConnectTimeout: HTTPSConnectionPool(host='opendata.cwa.gov.tw', port=443): Max retries exceeded with url: /api/v1/rest/datastore/O-A0001-001?Authorization=CWA-4A8A0D9D-95EA-4DA0-A62C-2DC7A8909F06&StationId=C0G660&format=JSON (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000019CB5ADCE10>, 'Connection to opendata.cwa.gov.tw timed out. (connect timeout=10)'))",
-      "weather_api_error_time": "2026-11-10 02:35:51"
+      "weather_api_error": "ConnectTimeout: HTTPSConnectionPool(host='opendata.cwa.gov.tw', port=443): Max retries exceeded with url: /api/v1/rest/datastore/O-A0001-001?Authorization=CWA-4A8A0D9D-95EA-4DA0-A62C-2DC7A8909F06&StationId=C0G660&format=JSON (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000019CB5ADCCD0>, 'Connection to opendata.cwa.gov.tw timed out. (connect timeout=10)'))",
+      "weather_api_error_time": "2026-11-10 02:36:51"
     }
   ]
 }
